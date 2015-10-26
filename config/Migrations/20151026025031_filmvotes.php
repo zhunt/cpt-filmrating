@@ -1,8 +1,10 @@
 <?php
 use Migrations\AbstractMigration;
 
+// This is our main table for the film votes
 class Filmvotes extends AbstractMigration
 {
+
     public function up()
     {
         $table = $this->table('film_votes');
