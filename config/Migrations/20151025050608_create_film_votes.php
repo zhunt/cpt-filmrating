@@ -10,6 +10,8 @@ class CreateFilmVotes extends AbstractMigration
      * http://docs.phinx.org/en/latest/migrations.html#the-change-method
      * @return void
      */
+
+    // This is our main table for the film votes
     public function change()
     {
         $table = $this->table('film_votes');
@@ -56,6 +58,5 @@ class CreateFilmVotes extends AbstractMigration
             'null' => false,
         ]);
         $table->create();
-        
     }
 }
