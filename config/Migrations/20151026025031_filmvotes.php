@@ -23,26 +23,31 @@ class Filmvotes extends AbstractMigration
                 'default' => 0,
                 'limit' => 6,
                 'null' => false,
+                'signed' => false
             ])
             ->addColumn('vote_2', 'integer', [
                 'default' => 0,
                 'limit' => 6,
                 'null' => false,
+                'signed' => false
             ])
             ->addColumn('vote_3', 'integer', [
                 'default' => 0,
                 'limit' => 6,
                 'null' => false,
+                'signed' => false
             ])
             ->addColumn('vote_4', 'integer', [
                 'default' => 0,
                 'limit' => 6,
                 'null' => false,
+                'signed' => false
             ])
             ->addColumn('vote_5', 'integer', [
                 'default' => 0,
                 'limit' => 6,
                 'null' => false,
+                'signed' => false
             ])
             ->addColumn('created', 'datetime', [
                 'default' => null,
