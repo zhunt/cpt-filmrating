@@ -10,12 +10,18 @@ class CreateFilmVotes extends AbstractMigration
      * http://docs.phinx.org/en/latest/migrations.html#the-change-method
      * @return void
      */
+
+    // This is our main table for the film votes
     public function change()
     {
         $table = $this->table('film_votes');
         $table->addColumn('film', 'string', [
             'default' => null,
             'limit' => 50,
+            'null' => false,
+        ]);
+        $table->addColumn('description', 'text', [
+            'default' => null,
             'null' => false,
         ]);
         $table->addColumn('vote_1', 'integer', [
