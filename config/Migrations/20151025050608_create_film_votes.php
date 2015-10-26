@@ -18,6 +18,10 @@ class CreateFilmVotes extends AbstractMigration
             'limit' => 50,
             'null' => false,
         ]);
+        $table->addColumn('description', 'text', [
+            'default' => null,
+            'null' => false,
+        ]);
         $table->addColumn('vote_1', 'integer', [
             'default' => null,
             'limit' => 11,
