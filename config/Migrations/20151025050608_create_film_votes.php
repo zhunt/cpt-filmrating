@@ -15,7 +15,7 @@ class CreateFilmVotes extends AbstractMigration
         $table = $this->table('film_votes');
         $table->addColumn('film', 'string', [
             'default' => null,
-            'limit' => 255,
+            'limit' => 50,
             'null' => false,
         ]);
         $table->addColumn('vote_1', 'integer', [
