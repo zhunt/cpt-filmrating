@@ -56,5 +56,6 @@ class CreateFilmVotes extends AbstractMigration
             'null' => false,
         ]);
         $table->create();
+        
     }
 }
